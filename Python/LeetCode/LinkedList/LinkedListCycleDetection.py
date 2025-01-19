@@ -16,11 +16,11 @@ class Solution(object):
 
         
 
-        while fast and fast.next:
+        while fast and fast.next: # The fast pointer moves two nodes while the slow pointer moves one
             slow = slow.next
             fast = fast.next.next
 
-            if slow == fast:
+            if slow == fast: # So if the slow is == to fast that means it is in the linked list
                 return True
         
         return False

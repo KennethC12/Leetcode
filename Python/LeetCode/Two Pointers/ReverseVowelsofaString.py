@@ -6,9 +6,9 @@ class Solution(object):
         """
         s = list(s)
 
-        i , j = 0, len(s) -1
+        i , j = 0, len(s) -1 # Initialze Two pointers 
 
-        vowels = set("aeiouAEIOU")
+        vowels = set("aeiouAEIOU") # Create a hashmap that contains the vowels
 
         while (i<j):
             if (s[i] not in vowels):
