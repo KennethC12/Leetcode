@@ -53,3 +53,12 @@ class LinkedList:
                     current_node = None
                 else:
                     current_node = next_node
+
+    def reversePrint(curr):
+
+        if curr is None:
+            return
+        
+        reversePrint(curr.next)
+
+        print(curr.data, end="\n")
